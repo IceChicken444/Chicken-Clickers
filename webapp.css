@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+/* texts */
+body {
+    background-image: url("images/barn.jpg");
+	background-size: cover;
+	font-family:'Gloria Hallelujah', cursive;
+}
+
+
+
+
+/*-------------------------------------------------
+
+	BASIC STRUCTURE
+
+-------------------------------------------------*/
+#title {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#leftColumn img {
+	width: 100%;
+}
+
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin:20px auto;
+}
+
+#leftColumn	 {
+	background-color: white;
+	height: 650px;
+	float: left;
+	border-radius: 15px;
+}
+#rightColumn {
+	background-color: white;
+	float: right;
+	width: 400px;
+	border-radius: 15px;
+}
+
+/* responsive widths*/
+
+@media screen and (max-width: 980px) {
+	#wrapper {
+		width: 94%;
+	}
+	#rightColumn {
+		width: 65%;
+	}
+	#leftColumn {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#leftColumn, #rightColumn {
+		width: 50%;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#wrapper {
+		height: auto;
+	}
+	#title {
+		font-size: 24px;
+	}
+	#leftColumn, rightColumn {
+		float: none;
+	}
+}
